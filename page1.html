@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Love_Journey</title>
+        
+</head>
+
+<body>
+
+    <div class="head">
+        <h1 id="h1">Joyce&Charbel</h1>
+
+        <div class="loading">
+            <svg height="48px" width="64px">
+                <polyline id="back" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
+                <polyline id="front" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
+            </svg>
+        </div>
+        <audio controls loop autoplay id="audioPlayer">
+            <source src="./Yiruma - River Flows in You.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <h2 id="h2">Since 7-7-2023</h2>
+
+        <div id="timerb">
+            <h3>Time Together: </h3>
+            <div id="timer"></div>
+        </div>
+
+
+    </div>
+   
+    <div class="heart-container" title="Like"   onclick="toggleimageset1();toggleheartcontainer2();toggletextoff();">
+        <input type="checkbox" class="checkbox" id="Give-It-An-Id">
+        <div class="svg-container">
+            <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                </path>
+            </svg>
+            <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                </path>
+            </svg>
+            <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+            </svg>
+        </div>
+    </div>
+
+    <div id="text-entry"> 
+        <h3 class="entry-text">When my days were all rainy and gray,</br></br>
+        You arrived like sunshine, chasing clouds away.</br></br>
+        Your laughter, a melody, a sweet serenade,</br></br>
+        In your presence, all my worries would fade.</br></br>
+        
+        Eyes that sparkle, like stars in the night,</br></br>
+        Guiding me through darkness, towards the light.</br></br>
+        Your touch, a gentle breeze on a summer's eve,</br></br>
+        In your arms, all the chaos takes its leave.</br></br>
+        
+        Through the storms and the calm, side by side,</br></br>
+        With you, every moment becomes a joyous ride.</br></br>
+        In the gallery of life, you're my masterpiece,</br></br>
+        A love so profound, it will never cease.</br></br>
+        
+        So here's to us, to the moments we share,</br></br>
+        A love so deep, so precious, so rare.</br></br>
+        In the book of my life, you're the sweetest page,</br></br>
+        Forever and always, my heart's engaged.</br></br>
+    </h3>
+</div>
+
+    <div class="first-image-set" id="first-image-set" >
+        <div class="img1">
+            <img src="./img1.jpg">
+        </div>
+        <div class="img2">
+            <img src="./img2.jpg">
+        </div>
+        <div class="img3">
+            <img src="./IMG_5954.jpg">
+        </div>
+    </div>
+
+    <div class="heart-container2" title="Like" id="heart-container2" onclick="toggleimageset2();toggleheartcontainer3();" >
+        <input type="checkbox" class="checkbox2" id="Give-It-An-Id2">
+        <div class="svg-container2">
+            <svg viewBox="0 0 24 24" class="svg-outline2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                </path>
+            </svg>
+            <svg viewBox="0 0 24 24" class="svg-filled2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                </path>
+            </svg>
+            <svg class="svg-celebrate2" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+            </svg>
+        </div>
+    </div>
+    <div class="second-image-set" id="second-image-set" >
+        <div class="img1-2">
+            <img src="./34990ebf-2a1d-4d5e-b7d5-b98524a6ee10.JPG">
+        </div>
+        <div class="img2-2">
+            <img src="./4c7b7aa0-9e17-479a-a212-c9ffeecec9d7.JPG">
+        </div>
+        <div class="img3-2">
+            <img src="./IMG_7212.jpg">
+        </div>
+    </div>
+
+    <div class="heart-container3" title="Like" id="heart-container3" onclick="toggleimageset3();toggleheartcontainer4()">
+        <input type="checkbox" class="checkbox3" id="Give-It-An-Id3">
+        <div class="svg-container3">
+            <svg viewBox="0 0 24 24" class="svg-outline3" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                </path>
+            </svg>
+            <svg viewBox="0 0 24 24" class="svg-filled3" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                </path>
+            </svg>
+            <svg class="svg-celebrate3" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+            </svg>
+        </div>
+    </div>
+
+    <div class="third-image-set" id="third-image-set" >
+        <div class="img1-3">
+            <img src="./IMG_7697.jpg">
+        </div>
+        <div class="img2-3">
+            <img src="./img3.jpg">
+        </div>
+        <div class="img3-3">
+            <img src="./IMG_8023.jpg">
+        </div>
+    </div>
+    <div class="heart-container4" title="Like" id="heart-container4" onclick="toggleimageset4();toggleheartcontainer5()">
+        <input type="checkbox" class="checkbox4" id="Give-It-An-Id4">
+        <div class="svg-container4">
+            <svg viewBox="0 0 24 24" class="svg-outline4" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                </path>
+            </svg>
+            <svg viewBox="0 0 24 24" class="svg-filled4" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                </path>
+            </svg>
+            <svg class="svg-celebrate4" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+            </svg>
+        </div>
+        </div>
+
+    <div class="fourth-image-set" id="fourth-image-set" >
+        <div class="img1-4">
+            <img src="./IMG_7520.jpg">
+        </div>
+        <div class="img2-4">
+            <img src="./IMG_6387.jpg">
+        </div>
+        <div class="img3-4">
+            <img src="./IMG_7555.jpg">
+        </div>
+    </div>
+
+
+    <div class="heart-container5" title="Like" id="heart-container5" onclick="toggleimageset5()">
+        <input type="checkbox" class="checkbox5" id="Give-It-An-Id5">
+        <div class="svg-container5">
+            <svg viewBox="0 0 24 24" class="svg-outline5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                </path>
+            </svg>
+            <svg viewBox="0 0 24 24" class="svg-filled5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                </path>
+            </svg>
+            <svg class="svg-celebrate5" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+            </svg>
+        </div>
+    </div>
+
+    <div class="fifth-image-set" id="fifth-image-set" >
+        <div class="img1-5">
+            <img src="./IMG_6433.jpg">
+        </div>
+        <div class="img2-5">
+            <img src="./IMG_6461.jpg">
+        </div>
+        <div class="img3-5">
+            <img src="./IMG_8623.jpg">
+        </div>
+    </div>
+</body>
+<section id="timeline-body">
+    <div id="timeline"></div>
+</section>
+
+</html>

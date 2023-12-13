@@ -1,0 +1,796 @@
+
+html{
+  
+  background-image: linear-gradient(
+    90deg,
+burlywood,
+brown
+
+
+  );
+
+}
+
+#h1 {
+  text-align: center;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+}
+
+#h2
+{
+  position: absolute;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  top: 0%;
+  right: 10%;
+
+}
+#text-entry{
+display: flex;
+width: 700px;
+margin: auto;
+opacity: 1; 
+      transition: opacity 3s ease;
+      justify-content: space-evenly;
+      flex-direction: row;
+      
+}
+
+.entry-text{
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.2;
+  
+}
+
+
+#timerb
+{
+  border: 2px solid white;
+  border-radius: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0%;
+  right: 1%;
+  display: flex;
+  color: white;
+}
+#timer
+{
+  color: white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: italic;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 19px;
+  display: flex;
+  width: 360px;
+
+}
+
+.loading {
+  text-align: center;
+}
+
+.head {
+  position: relative;
+  border: 4px solid white;
+  
+  height: 150px;
+  background-image: linear-gradient(
+    90deg,
+burlywood,
+brown
+
+
+  );
+  width: 100%;
+}
+
+
+.loading svg polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+  fill: none;
+}
+
+.loading svg polyline#front {
+  fill: none;
+  stroke: #FF0000;
+  stroke-dasharray: 48, 144;
+  stroke-dashoffset: 192;
+  animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 0;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+audio::-webkit-media-controls-panel {
+color: white;
+  background-color: burlywood;
+
+
+}
+
+audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-mute-button,
+        audio::-webkit-media-controls-volume-slider
+     {
+          
+          filter: invert(1);
+
+        }
+        audio::-webkit-media-controls-volume-slider::-webkit-slider-runnable-track,
+        audio::-webkit-media-controls-timeline::-webkit-slider-runnable-track{
+          filter: invert(1);
+          background-color: white;
+        }
+
+
+
+
+
+
+
+
+/*css for the images containers*/
+.first-image-set{
+  display: none;
+  flex-wrap: wrap;
+  padding: 10px;
+  opacity: 0; 
+      transition: opacity 1.5s ease-in-out;
+}
+
+.second-image-set{
+  top: auto;
+  display: none;
+  flex-wrap: wrap;
+  padding: 10px;
+  opacity: 0; 
+      transition: opacity 1.5s ease-in-out;
+
+}
+.third-image-set{
+  top: auto;
+  display: none;
+  flex-wrap: wrap;
+  padding: 10px;
+  opacity: 0; 
+      transition: opacity 1.5s ease-in-out;
+}
+.fourth-image-set{
+  top: auto;
+  display: none;
+  flex-wrap: wrap;
+  padding: 10px;
+  opacity: 0; 
+      transition: opacity 1.5s ease-in-out;
+}
+.fifth-image-set{
+  top: auto;
+  display: none;
+  flex-wrap: wrap;
+  padding: 10px;
+  opacity: 0; 
+      transition: opacity 1.5s ease-in-out;
+
+}
+img{
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  
+}
+/*this is the css for the images of the first set:*/
+.img1
+{
+justify-self: left;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+ 
+}
+
+.img2
+{
+
+justify-self: center;
+ 
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+
+}
+
+.img3
+{
+
+justify-self: right;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+
+}
+/*this is the css for the images of the second set:*/
+
+.img1-2{
+  justify-self: left;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+.img2-2{
+  justify-self: center;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+
+}
+
+.img3-2{
+  justify-self: right;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+
+
+}
+
+.img1-3{
+  justify-self: left;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+.img2-3{
+  justify-self: center;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+
+.img3-3{
+  justify-self: right;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+
+.img1-4{
+  justify-self: left;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+.img2-4{
+  justify-self: center;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+.img3-4{
+  justify-self: right;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+.img1-5{
+  justify-self: left;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+.img2-5{
+  justify-self: center;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+
+.img3-5{
+  justify-self: right;
+  border: 4px solid white;
+  width: 400px;
+  height: 533.333px;
+  margin: auto;
+}
+
+#audioPlayer {
+  top: 50%;
+  left: 0px;
+
+  position: absolute;
+}
+
+
+
+
+/*this is for all the hearts*/
+.heart-container {
+  --heart-color: rgb(212, 0, 60);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+  top: 50%;
+  left: 48%;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+.heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+
+
+
+
+.heart-container2 {
+  --heart-color: rgb(212, 0, 60);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+  top: 50%;
+  left: 48%;
+  display: none;
+  
+}
+
+.heart-container2 .checkbox2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container2 .svg-container2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container2 .svg-outline2,
+.heart-container2 .svg-filled2 {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container2 .svg-filled2 {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container2 .svg-celebrate2 {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container2 .checkbox2:checked~.svg-container2 .svg-filled2 {
+  display: block
+}
+
+.heart-container2 .checkbox2:checked~.svg-container2 .svg-celebrate2 {
+  display: block
+}
+
+@keyframes keyframes-svg-filled2 {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate2 {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+.heart-container3 {
+  --heart-color: rgb(212, 0, 60);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+  top: 50%;
+  left: 48%;
+  display: none;
+  
+}
+
+.heart-container3 .checkbox3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container3 .svg-container3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container3 .svg-outline3,
+.heart-container3 .svg-filled3 {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container3 .svg-filled3 {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container3 .svg-celebrate3 {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container3 .checkbox3:checked~.svg-container3 .svg-filled3 {
+  display: block
+}
+
+.heart-container3 .checkbox3:checked~.svg-container3 .svg-celebrate3 {
+  display: block
+}
+
+@keyframes keyframes-svg-filled3 {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate3 {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+.heart-container4 {
+  --heart-color: rgb(212, 0, 60);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+  top: 50%;
+  left: 48%;
+  display: none;
+  
+}
+
+.heart-container4 .checkbox4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container4 .svg-container4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container4 .svg-outline4,
+.heart-container4 .svg-filled4 {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container4 .svg-filled4 {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container4 .svg-celebrate4 {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container4 .checkbox4:checked~.svg-container4 .svg-filled4 {
+  display: block
+}
+
+.heart-container4 .checkbox4:checked~.svg-container4 .svg-celebrate4 {
+  display: block
+}
+
+@keyframes keyframes-svg-filled4 {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate4 {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+.heart-container5 {
+  --heart-color: rgb(212, 0, 60);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+  top: 50%;
+  left: 48%;
+  display: none;
+  
+}
+
+.heart-container5 .checkbox5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container5 .svg-container5 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container5 .svg-outline5,
+.heart-container5 .svg-filled5 {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container5 .svg-filled5 {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container5 .svg-celebrate5 {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container5 .checkbox5:checked~.svg-container5 .svg-filled5 {
+  display: block
+}
+
+.heart-container5 .checkbox5:checked~.svg-container5 .svg-celebrate5 {
+  display: block
+}
+
+@keyframes keyframes-svg-filled5{
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate5 {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
